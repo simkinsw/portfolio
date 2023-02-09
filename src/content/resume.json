@@ -1,0 +1,165 @@
+{
+    "header" : {
+        "name": "William Simkins",
+        "position": "Software Engineer",
+        "contactInfoList": [
+            {
+                "text": "Chicago, IL",
+                "icon": "FaCity"
+            },
+            {
+                "text": "(773) 263-4865",
+                "icon": "FaPhone"
+            },
+            {
+                "text": "wmsimkins@gmail.com",
+                "icon": "FaEnvelope"
+            },
+            {
+                "text": "simkinsw",
+                "link": "https://www.github.com/simkinsw",
+                "icon": "FaGithub"
+            },
+            {
+                "text": "William Simkins",
+                "icon": "FaLinkedin",
+                "link": "https://www.linkedin.com/in/will-simkins-31973623a/"
+            },
+            {
+                "text": "williamsimkins.com",
+                "icon": "FaLink",
+                "link": "https://www.williamsimkins.com"
+            }
+        ]
+    },
+    "skills": {
+        "header": {
+            "icon": "FaCog",
+            "text": "Skills"
+        },
+        "categories": [
+            {
+                "name": "Languages",
+                "entries": ["JavaScript", "TypeScript", "Java", "Python", "HTML/CSS"]
+            },
+            {
+                "name": "Libraries & Frameworks",
+                "entries": ["React.js", "TailwindCSS", "Sass", "Spring", "Unity"]
+            },
+            {
+                "name": "Tools",
+                "entries": ["AWS", "Git / Github", "GoCD"]
+            },
+            {
+                "name": "Databases",
+                "entries": ["MySQL", "PostgreSQL", "NoSQL", "GraphQL"]
+            }
+        ]
+    },
+    "workExperience": {
+        "header": {
+            "icon": "FaBriefcase",
+            "text": "Work Experience"
+        },
+        "workExperience": [
+            {
+                "title": "Software Engineer I",
+                "company": "Evive",
+                "date": "07/2022 - 01/2023",
+                "location": "Chicago, IL",
+                "responsibilities": [
+                    "Helped to build and improve a highly-scalable event ingestion solution using AWS EventBridge, SQS, and ECS to process, store, and search over 1 billion events",
+                    "Created endpoints used for end-to-end reversion of medical claim events using AWS API Gateway and Lambda to support a company-wide push to improve data integrity",
+                    "Collaborated with a team of 3 to develop a React-based frontend for configuring customer data, significantly reducing mistakes and speeding up pnboarding of new customers"
+                ]
+            },
+            {
+                "title": "Computer Science Teacher",
+                "company": "Chicago Public Schools",
+                "date": "08/2020 - 06/2022",
+                "location": "Chicago, IL",
+                "responsibilities": [
+                    "Taught in the Information Technology pathway of the Career and Technical Education program, helping prepare students for careers in web development and game development",
+                    "Designed curriculum and taught classes covering JavaScript, HTML, CSS, Scratch, critical thinking, and problem solving",
+                    "Collaborated extensively with students, parents, teachers, and administrators to maximize outcomes and meet student needs"
+                ]
+            },
+            {
+                "title": "Computer Science Teacher",
+                "company": "Honeoye Falls-Lima Central School District",
+                "date": "07/2019 - 06/2020",
+                "location": "Honeoye Falls-Lima, NY",
+                "responsibilities": [
+                    "Taught Advanced Placement Computer Science and Intro to Java",
+                    "Faculty mentor to a FIRST Robotics team"
+                ]
+            },
+            {
+                "title": "Mathematics Teacher",
+                "company": "Rochester City School District",
+                "date": "07/2018 - 06/2019",
+                "location": "Rochester, NY",
+                "responsibilities": [
+                    "Taught High School Algebra and Geometry",
+                    "Students were four times more likely to pass the Algebra Regents state exam than the school average"
+                ]
+            }
+        ]
+    },
+    "education": {
+        "header": {
+            "icon": "FaGraduationCap",
+            "text": "Education"
+        },
+        "education": [
+            {
+                "name": "University of Rochester",
+                "degrees": ["Masters of Science in Education - Secondary Mathematics"],
+                "date": "05/2017 - 10/2018"
+            },
+            {
+                "name": "University of Chicago",
+                "degrees": ["Bachelor of Science - Mathematics", "Bachelor of Arts - Linguistcs"],
+                "date": "09/2013 - 06/2017"
+            }
+        ]
+    },
+    "projects": {
+        "header": {
+            "icon": "FaFolder",
+            "text": "Projects"
+        },
+        "projects": [
+            {
+                "name": "Chicagoland Melee Stats",
+                "githubLink": "https://github.com/simkinsw/clm-stats-backend",
+                "projectLink": "https://chicagomelee.com/stats",
+                "description": "Fullstack app created for the Chicago Super Smash Bros. Melee community to track tournament statistics and compare and rank players. Used daily by a community of over 500 players.",
+                "bullets": [
+                    "Used GCP Cloud Scheduler to automate querying the start.gg GraphQL API and access tournament data for the Chicagoland area daily",
+                    "Created a backend using Java Spring and PostgreSQL which compiles and agregates tournament data and ranks players with the Glicko2 rating system",
+                    "Created a REST API and deployed to GCP using Docker to allow for realtime querying of data",
+                    "Worked with a UI/UX designer to build a fully-responsive frontend using React and hosted with WordPress"
+                ]
+            },
+            {
+                "name": "Chicagoland Melee Power Rankings Graphics",
+                "githubLink": "https://github.com/simkinsw/pr-graphic",
+                "projectLink": "https://chicagomelee.com/clm-summer-2022-power-rankings/",
+                "description": "Interactive, animated website released quarterly to present the community-voted rankings for the Chicago Melee community",
+                "bullets": [
+                    "Built a fully responsive React frontend featuring animations and custom scrolling behavior"
+                ]
+            },
+            {
+                "name": "Chicagoland Melee Stream Overlay (In Progress)",
+                "githubLink": "https://github.com/simkinsw/clm-stats-overlay/",
+                "description": "Overlay used by twitch.tv/chicagomelee to display stats about players during tournament streams.",
+                "bullets": [
+                    "Used React, Typescript, and Electron to create a stream overlay which displays up-to-date competitor data from the start.gg API and CLM stats",
+                    "Integrates with Tournament Stream Helper and Open Broadcaster Software to automatically update the overlay when players change"
+                ]
+            }
+        ]
+    }
+}
