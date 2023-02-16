@@ -7,7 +7,7 @@ import resume from "../content/resume.json";
 
 const Resume = () => {
     return (
-        <main className="bg-white rounded-md shadow-md py-12 mx-4 m2-6 px-4 sm:px-8 lg:px-16 lg:mx-6 lg:text-lg xl:px-32 xl:mx-12">
+        <main className="bg-white rounded-md shadow-md py-12 mx-4 mt-6 px-4 sm:px-8 lg:px-16 lg:mx-6 lg:text-lg xl:px-32 xl:mx-12">
             <ResumeHeader header={resume.header} />
             <Skills data={resume.skills} />
             <WorkExperience data={resume.workExperience} />
