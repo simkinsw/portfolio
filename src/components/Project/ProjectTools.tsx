@@ -11,7 +11,7 @@ const ProjectTools: FC<ProjectToolsProps> = ({ project }) => {
             <h1 className="text-2xl font-bold">
                 Technologies Used
             </h1>
-            <ul className="ml-8 mt-4 grid gap-y-1 grid-cols-2 sm:grid-cols-4">
+            <ul className="ml-4 mt-4 grid gap-y-1 grid-cols-2 sm:grid-cols-4">
                 {
                     project.tools.map((tool) => {
                         return (

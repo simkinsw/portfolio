@@ -1,4 +1,4 @@
-import { FC, useRef } from "react";
+import { FC, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 
 type EmailFormProps = {
@@ -7,8 +7,10 @@ type EmailFormProps = {
 
 const EmailForm: FC<EmailFormProps> = ({ setStatus }) => {
     const formRef = useRef<HTMLFormElement>(null);
+    const [submitted, setSubmitted] = useState(false);
 
     const handleSubmit = () => {
+        setSubmitted(true);
         if(!formRef.current?.checkValidity()) return;
 
         setStatus(true, false, false);
@@ -33,7 +35,7 @@ const EmailForm: FC<EmailFormProps> = ({ setStatus }) => {
                 Contact Form
             </div>
             <form className="text-lg w-full mt-3 text-gray-600" ref={formRef}>    
-                <div className="flex flex-col gap-4 mb-3 sm:flex-row">
+                <div className="flex flex-col gap-4 mb-1 sm:flex-row">
                     <div className="flex flex-col flex-1">
                         <label>Name</label>
                         <input 
@@ -45,10 +47,13 @@ const EmailForm: FC<EmailFormProps> = ({ setStatus }) => {
                     <div className="flex flex-col flex-1">
                         <label>Email</label>
                         <input 
-                            className={inputClass} 
+                            className={inputClass + (submitted && " peer")} 
                             type="email" 
                             name="from_email" 
                         />
+                        <p className="invisible peer-invalid:visible text-red-700 font-light">
+                            Please enter a valid email address
+                        </p>
                     </div>
                 </div>
                 <label className="block">Message</label>

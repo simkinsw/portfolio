@@ -8,7 +8,7 @@ import dungeonBuddies from "../assets/images/dungeonBuddies.png";
 export const projects =[
     {
         "id": 1,
-        "title": "CLM Stats",
+        "title": "Chicagoland Melee Stats Page",
         "types": ["React-JS", "Java/Python"],
         "link": "https://www.chicagomelee.com/stats",
         "github": "https://github.com/simkinsw/clm-stats-backend",
