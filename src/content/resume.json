@@ -26,9 +26,9 @@
                 "link": "https://www.linkedin.com/in/will-simkins-31973623a/"
             },
             {
-                "text": "williamsimkins.com",
+                "text": "will-simkins.com",
                 "icon": "FaLink",
-                "link": "https://www.williamsimkins.com"
+                "link": "https://www.will-simkins.com"
             }
         ]
     },
@@ -163,7 +163,7 @@
             {
                 "name": "Portfolio Website",
                 "githubLink": "https://github.com/simkinsw/portfolio",
-                "projectLink": "https://williamsimkins.com",
+                "projectLink": "https://will-simkins.com",
                 "description": "Personal website containing my resume and portfolio.",
                 "bullets": [
                     "Fully responsive website built using React, TypeScript, and TailwindCSS",

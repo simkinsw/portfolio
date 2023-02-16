@@ -28,7 +28,7 @@ export const projects =[
         "id": 2,
         "title": "Portfolio Webpage",
         "types": ["React-JS"],
-        "link": "https://www.williamsimkins.com",
+        "link": "https://www.will-simkins.com",
         "github": "https://github.com/simkinsw/portfolio",
         "description": "Personal website containing my resume and portfolio.",
         "features": [
