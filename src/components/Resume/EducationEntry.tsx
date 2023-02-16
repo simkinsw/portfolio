@@ -8,15 +8,16 @@ type EducationEntryProps = {
 const EducationEntry: FC<EducationEntryProps> = ({ data }) => {
     return (
         <div>
-            <div className="text-xl">
-                <span className="font-semibold">{data.name}</span>
-                <span> | {data.date}</span>
+            <div className="text-lg sm:text-xl">
+                <span className="font-semibold block sm:inline-block">{data.name}</span>
+                <span className="hidden sm:inline"> | </span>
+                <span>{data.date}</span>
             </div>
             <ul>
                 {
-                    data.degrees.map((degree) => {
+                    data.degrees.map((degree, i) => {
                         return (
-                            <li className="text-gray-600">
+                            <li className="text-gray-600" key={i}>
                                 {degree}
                             </li>
                         )

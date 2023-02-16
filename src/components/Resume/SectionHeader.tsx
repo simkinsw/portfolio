@@ -8,7 +8,7 @@ type SectionHeaderProps = {
 
 const SectionHeader: FC<SectionHeaderProps> = ({ data }) => {
     return (
-        <header className="mt-10 mb-6">
+        <header className="mt-4 mb-2 lg:mt-10 lg:mb-5">
             <div className="flex items-center py-4">
                 <div className="flex-grow h-px bg-gray-300"></div> 
 

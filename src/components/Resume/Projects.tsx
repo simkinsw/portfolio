@@ -15,7 +15,7 @@ const Projects: FC<ProjectsProps> = ({ data }) => {
                 {
                     data.projects.map((project) => {
                         return (
-                            <ProjectEntry data={project} />
+                            <ProjectEntry data={project} key={project.name} />
                         )
                     })
                 }

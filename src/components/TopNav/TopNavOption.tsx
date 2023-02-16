@@ -4,11 +4,16 @@ import { Link } from "react-router-dom";
 type TopNavOptionProps = {
     text: string;
     slug: string;
+    twClass?: string;
+    active: boolean;
 }
 
-const TopNavOption: FC<TopNavOptionProps> = ({ text, slug }) => {
+const TopNavOption: FC<TopNavOptionProps> = ({ text, slug, twClass, active }) => {
     return (
-        <li>
+        <li className={(twClass ?? "") + 
+            " underline-offset-2 px-2 hover:underline" + (active ? " underline" : "") +
+            " lg:px-6"
+        }>
             <Link to={`/${slug.toLowerCase()}`} >
                 {text}
             </Link>

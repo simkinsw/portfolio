@@ -13,9 +13,9 @@ const WorkExperience: FC<WorkExperienceProps> = ({ data }) => {
             <SectionHeader data={data.header} />
             <div>
                 {
-                    data.workExperience.map((entry) => {
+                    data.workExperience.map((entry, i) => {
                         return (
-                            <WorkExperienceEntry data={entry} />
+                            <WorkExperienceEntry data={entry} key={i} />
                         )
                     })
                 }

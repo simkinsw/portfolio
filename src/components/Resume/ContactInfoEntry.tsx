@@ -9,7 +9,7 @@ type ContactInfoProps = {
 const ContactInfoEntry: FC<ContactInfoProps> = ({ contactInfo }) => {
 
     const content = (
-        <div className="flex text-gray-600 text-lg">
+        <div className="flex text-gray-600 sm:text-lg">
             <FaIcon twClass="relative top-1.5 mr-2" name={contactInfo.icon} />
             {contactInfo.text}
         </div>

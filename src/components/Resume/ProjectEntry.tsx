@@ -10,10 +10,10 @@ const ProjectEntry: FC<ProjectEntryProps> = ({ data }) => {
     return (
         <div className="mb-8">
             <div className="flex gap-2">
-                <span className="text-2xl font-semibold">{data.name}</span>
+                <span className="font-semibold text-xl md:text-2xl">{data.name}</span>
                 {data.githubLink && (
                     <a href={data.githubLink}>
-                        <ImGithub className="relative top-1 w-6 h-6 fill-gray-600" />
+                        <ImGithub className="relative w-6 h-6 fill-gray-600 md:top-1" />
                     </a>
                 )}
             </div>
@@ -25,11 +25,11 @@ const ProjectEntry: FC<ProjectEntryProps> = ({ data }) => {
             <div className="mt-2 text-gray-600">
                 {data.description}
             </div>
-            <ul className="list-disc ml-8 my-4">
+            <ul className="list-disc ml-4 my-4">
                 {
-                    data.bullets.map((bullet) => {
+                    data.bullets.map((bullet, i) => {
                         return (
-                            <li className="text-gray-600">
+                            <li className="text-gray-600 not-last:pb-1" key={i}>
                                 {bullet}
                             </li>
                         )

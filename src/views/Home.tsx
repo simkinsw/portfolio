@@ -1,22 +1,10 @@
 import Profile from "../components/Profile";
 import ProjectOverview from "../components/ProjectOverview";
+import { projects } from "../content/projects";
 
 const Home = () => {
-    const projects = [{
-        title: "CLM Stats",
-        types: ["React-JS", "Java/Python"],
-        description: "Website for Chicagoland Melee",
-        icons: ["React", "Java"]
-    },
-    {
-        title: "Portfolio Webpage",
-        types: ["React-JS"],
-        description: "It's my portfolio!",
-        icons: ["React"]
-    }]
-
     return (
-        <main className="flex gap-24">
+        <main className="flex flex-col gap-8 mt-6 lg:mt-12 xl:flex-row xl:gap-24">
             <Profile />
             <ProjectOverview projects={projects} />
         </main>

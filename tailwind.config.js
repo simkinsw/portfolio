@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ["./src/**/*.{html,js,ts,tsx}"],
   theme: {
@@ -8,5 +10,9 @@ module.exports = {
       'serif': 'Inconsolata'
     }
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addVariant }) {
+      addVariant('not-last', '&:not(:last-child)')
+    })
+  ],
 }

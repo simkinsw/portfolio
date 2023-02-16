@@ -10,13 +10,13 @@ type ProfileItemProps = {
 const ProfileItem: FC<ProfileItemProps> = ({ Icon, header, text, link }) => {
     
     const content = (
-        <div className="flex gap-8">
+        <div className="flex gap-8 py-1 items-center">
             {Icon}
             <div>
-                <header className="text-lg text-black">{header}</header>
+                <header className="text-lg text-gray-800">{header}</header>
                 {text && text.map((entry) => {
                     return (
-                        <div className="text-gray-600 text-md">
+                        <div className="text-gray-500 text-md hidden md:block" key={entry}>
                             {entry}
                         </div>
                     )

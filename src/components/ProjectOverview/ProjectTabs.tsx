@@ -13,7 +13,7 @@ type TabProps = {
 
 const ProjectTabs: FC<ProjectTabsProps> = ({ curTab, onClick }) => {
     return (
-        <ul className="flex gap-8 border-b pb-4">
+        <ul className="flex gap-2 border-b pb-4 px-2 md:px-4 lg:gap-8">
             <ProjectTab text="All" curTab={curTab} onClick={onClick} />
             <ProjectTab text="React-JS" curTab={curTab} onClick={onClick} />
             <ProjectTab text="Java/Python" curTab={curTab} onClick={onClick} />
@@ -28,8 +28,9 @@ const ProjectTab: FC<TabProps> = ({ text, curTab, onClick }) => {
     return (
         <li 
             className={
-                `cursor-pointer text-gray-600 px-8 py-1 uppercase rounded-md text-lg
-                ${active && "bg-emerald-300 text-white"}
+                `cursor-pointer px-2 py-1 uppercase rounded-md md:text-lg md:px-4 lg:px-8 
+                ${active && "bg-emerald-400 text-white"}
+                ${!active && "text-gray-600"}
                 `
             }
             onClick={() => onClick(text)}

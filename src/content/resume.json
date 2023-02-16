@@ -43,7 +43,7 @@
                 "entries": ["JavaScript", "TypeScript", "Java", "Python", "HTML/CSS"]
             },
             {
-                "name": "Libraries & Frameworks",
+                "name": "Frameworks",
                 "entries": ["React.js", "TailwindCSS", "Sass", "Spring", "Unity"]
             },
             {
@@ -114,7 +114,7 @@
         "education": [
             {
                 "name": "University of Rochester",
-                "degrees": ["Masters of Science in Education - Secondary Mathematics"],
+                "degrees": ["Masters of Science - Mathematics Education"],
                 "date": "05/2017 - 10/2018"
             },
             {
@@ -137,7 +137,7 @@
                 "description": "Fullstack app created for the Chicago Super Smash Bros. Melee community to track tournament statistics and compare and rank players. Used daily by a community of over 500 players.",
                 "bullets": [
                     "Used GCP Cloud Scheduler to automate querying the start.gg GraphQL API and access tournament data for the Chicagoland area daily",
-                    "Created a backend using Java Spring and PostgreSQL which compiles and agregates tournament data and ranks players with the Glicko2 rating system",
+                    "Created a backend using Java Spring and PostgreSQL which compiles and aggregates tournament data and ranks players with the Glicko2 rating system",
                     "Created a REST API and deployed to GCP using Docker to allow for realtime querying of data",
                     "Worked with a UI/UX designer to build a fully-responsive frontend using React and hosted with WordPress"
                 ]
@@ -158,6 +158,35 @@
                 "bullets": [
                     "Used React, Typescript, and Electron to create a stream overlay which displays up-to-date competitor data from the start.gg API and CLM stats",
                     "Integrates with Tournament Stream Helper and Open Broadcaster Software to automatically update the overlay when players change"
+                ]
+            },
+            {
+                "name": "Portfolio Website",
+                "githubLink": "https://github.com/simkinsw/portfolio",
+                "projectLink": "https://williamsimkins.com",
+                "description": "Personal website containing my resume and portfolio.",
+                "bullets": [
+                    "Fully responsive website built using React, TypeScript, and TailwindCSS",
+                    "Optimized SEO using Lighthouse to achieve a score of 100"
+                ]
+            },
+            {
+                "name": "New York Times Crossword App",
+                "githubLink": "https://github.com/simkinsw/Crossword",
+                "description": "Desktop app used to solve the New York Time Crossword puzzles and store and track statistics on solve times.",
+                "bullets": [
+                    "Pulled daily crossword puzzle files from the New York Times website using Mozilla Cookie Jar",
+                    "Built a custom parser to recreate a puzzle grid from proprietary .puz files and validate solutions",
+                    "Used a MySQL database to store and track statistics and visualized them using graphs built with MatPlotLib and Seaborn"
+                ]
+            },
+            {
+                "name": "Dungeon Buddies",
+                "projectLink": "https://wsimkins.itch.io/dungeon-buddies",
+                "description": "Top down strategy game built in one week for the Brackeys Game Jam 2021.1",
+                "bullets": [
+                    "Used Unity, C#, and Aseprite to design and program a game from scratch",
+                    "Collaborated with another developer using Agile Methodology to assign and track work"
                 ]
             }
         ]

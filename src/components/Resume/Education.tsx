@@ -11,11 +11,11 @@ const Education: FC<EducationProps> = ({ data }) => {
     return (
         <section>
             <SectionHeader data={data.header} />
-            <div className="flex justify-between ">
+            <div className="flex justify-between flex-col gap-4 sm:gap-6 xl:flex-row xl:gap-0">
                 {
-                    data.education.map((entry) => {
+                    data.education.map((entry, i) => {
                         return (
-                            <EducationEntry data={entry} />
+                            <EducationEntry data={entry} key={i} />
                         );
                     })
                 }
