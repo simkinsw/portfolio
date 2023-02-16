@@ -4,7 +4,7 @@ import { projects } from "../content/projects";
 
 const Home = () => {
     return (
-        <main className="flex flex-col gap-8 mt-6 lg:mt-6 xl:flex-row xl:gap-24">
+        <main className="flex flex-col gap-8 mt-6 xl:mt-12 xl:flex-row xl:gap-24">
             <Profile />
             <ProjectOverview projects={projects} />
         </main>
