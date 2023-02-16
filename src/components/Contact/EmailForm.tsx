@@ -51,8 +51,8 @@ const EmailForm: FC<EmailFormProps> = ({ setStatus }) => {
                             type="email" 
                             name="from_email" 
                         />
-                        <p className="invisible peer-invalid:visible text-red-700 font-light">
-                            Please enter a valid email address
+                        <p className="invisible peer-invalid:visible text-red-700 font-light text-base">
+                            Invalid email address
                         </p>
                     </div>
                 </div>

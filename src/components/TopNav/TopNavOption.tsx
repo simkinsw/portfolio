@@ -11,7 +11,7 @@ type TopNavOptionProps = {
 const TopNavOption: FC<TopNavOptionProps> = ({ text, slug, twClass, active }) => {
     return (
         <li className={(twClass ?? "") + 
-            " underline-offset-2 px-2 hover:underline" + (active ? " underline" : "") +
+            " underline-offset-2 px-4 hover:underline" + (active ? " underline" : "") +
             " lg:px-6"
         }>
             <Link to={`/${slug.toLowerCase()}`} >
