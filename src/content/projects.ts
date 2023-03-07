@@ -12,7 +12,7 @@ export const projects =[
         "types": ["React-JS", "Java/Python"],
         "link": "https://www.chicagomelee.com/stats",
         "github": "https://github.com/simkinsw/clm-stats-backend",
-        "description": "Fullstack app created for the Chicago Super Smash Bros. Melee community to track tournament statistics and compare and rank players. Used daily by a community of over 500 players.",
+        "description": "Full stack app created for the Chicago Super Smash Bros. Melee community to track tournament statistics and compare and rank players. Used daily by a community of over 500 players.",
         "features": [
             "Uses GCP Cloud Scheduler to automate daily querying the start.gg GraphQL API and access tournament data in a 50 mile radius around Chicago",
             "Backend runs using Java Spring, JPA, and PostgreSQL and compiles and aggregates tournament data and ranks players with the Glicko2 rating system",

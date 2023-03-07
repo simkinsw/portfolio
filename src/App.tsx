@@ -11,8 +11,7 @@ function App() {
   return (
 	<Router>
 		<div className="bg-slate-100 min-h-screen pb-12 text-gray-800">
-			<div
-				className="container mx-auto font-serif md:px-8 lg:px-16">
+			<div className="container mx-auto font-serif md:px-8 lg:px-16">
 				<TopNav />
 				<Routes>
 					<Route path="/" element={<Home />} />

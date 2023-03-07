@@ -11,7 +11,9 @@ const ProfileItem: FC<ProfileItemProps> = ({ Icon, header, text, link }) => {
     
     const content = (
         <div className="flex gap-8 py-1 items-center">
-            {Icon}
+            <div className="w-6 sm:w-8 flex justify-center">
+                {Icon}
+            </div>
             <div>
                 <header className="text-lg text-gray-800">{header}</header>
                 {text && text.map((entry) => {

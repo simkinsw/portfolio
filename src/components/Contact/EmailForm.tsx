@@ -27,7 +27,7 @@ const EmailForm: FC<EmailFormProps> = ({ setStatus }) => {
         });
     }
 
-    const inputClass = "border-2 border-gray-300 rounded-sm pl-1";
+    const inputClass = "border-2 border-gray-300 rounded-sm pl-1 ";
 
     return (
         <div className="bg-white rounded-md shadow-md p-6 lg:w-3/5">
@@ -47,7 +47,7 @@ const EmailForm: FC<EmailFormProps> = ({ setStatus }) => {
                     <div className="flex flex-col flex-1">
                         <label>Email</label>
                         <input 
-                            className={inputClass + (submitted && " peer")} 
+                            className={inputClass + (submitted && "peer")} 
                             type="email" 
                             name="from_email" 
                         />

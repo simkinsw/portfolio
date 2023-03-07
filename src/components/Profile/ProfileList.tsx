@@ -6,7 +6,7 @@ type ProfileListProps = {
 
 const ProfileList: FC<ProfileListProps> = ({ children }) => {
     return (
-        <div className="flex flex-col gap-2 md:gap-6 px-8 pb-3 sm:py-5 md:py-8 sm:justify-evenly">
+        <div className="flex flex-col gap-2 md:gap-6 px-8 pb-3 sm:justify-evenly py-2">
             {children}
         </div>
     );

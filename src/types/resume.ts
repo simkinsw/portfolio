@@ -2,6 +2,7 @@ export type Resume = {
     header: ResumeHeaderInfo;
     skills: SkillsInfo;
     workExperience: WorkExperienceInfo;
+    certifications: CertificationInfo;
     education: EducationInfo;
     projects: ProjectInfo;
 }
@@ -44,6 +45,16 @@ export type WorkExperienceEntryInfo = {
     location: string;
     date: string;
     responsibilities: string[ ];
+}
+
+export type CertificationInfo = {
+    header: SectionHeaderInfo;
+    certificates: CertificateEntryInfo[];
+}
+
+export type CertificateEntryInfo = {
+    name: string;
+    date: string;
 }
 
 export type EducationInfo = {

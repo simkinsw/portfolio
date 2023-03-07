@@ -3,8 +3,7 @@ import ProfileImage from "./ProfileImage";
 import ProfileItem from "./ProfileItem";
 import ProfileList from "./ProfileList";
 
-import { HiWrenchScrewdriver } from "react-icons/hi2";
-import { ImGithub, ImLinkedin } from "react-icons/im";
+import { FaScroll, FaWrench, FaLinkedin, FaGithub } from "react-icons/fa";
 import { IoMdSchool } from "react-icons/io";
 
 const Profile = () => {
@@ -20,9 +19,13 @@ const Profile = () => {
                     <ProfileHeader heading="William Simkins" subheading="Software Engineer" />
                 </div>
                 <ProfileList>
+                    <ProfileItem
+                        Icon={<FaScroll className="w-6 h-6 sm:w-8 sm:h-8" />}
+                        header="AWS Certified Developer - Associate"
+                    />
                     <ProfileItem 
-                        Icon={<HiWrenchScrewdriver className="w-6 h-6 sm:w-8 sm:h-8" />}
-                        header="TypeScript, React, Java, AWS"
+                        Icon={<FaWrench className="w-6 h-6 sm:w-8 sm:h-8" />}
+                        header="TypeScript, React, Java, Python"
                     />
                     <ProfileItem 
                         Icon={<IoMdSchool className="w-6 h-6 sm:w-8 sm:h-8" />}
@@ -30,12 +33,12 @@ const Profile = () => {
                         text={["BS in Mathematics"]}
                     />
                     <ProfileItem
-                        Icon={<ImGithub className="w-6 h-6 sm:w-8 sm:h-8" />}
+                        Icon={<FaGithub className="w-6 h-6 sm:w-8 sm:h-8" />}
                         header="@simkinsw"
                         link="https://github.com/simkinsw"
                     />
                     <ProfileItem
-                        Icon={<ImLinkedin className="w-6 h-6 sm:w-8 sm:h-8" />}
+                        Icon={<FaLinkedin className="w-6 h-6 sm:w-8 sm:h-8" />}
                         header="will-simkins"
                         link="https://www.linkedin.com/in/will-simkins-31973623a/"
                     />

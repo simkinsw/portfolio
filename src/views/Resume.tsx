@@ -1,3 +1,4 @@
+import Certifications from "../components/Resume/Certifications";
 import Education from "../components/Resume/Education";
 import Projects from "../components/Resume/Projects";
 import ResumeHeader from "../components/Resume/ResumeHeader";
@@ -11,6 +12,7 @@ const Resume = () => {
             <ResumeHeader header={resume.header} />
             <Skills data={resume.skills} />
             <WorkExperience data={resume.workExperience} />
+            <Certifications data={resume.certifications} />
             <Education data={resume.education} />
             <Projects data={resume.projects} />
         </main>
